@@ -1,11 +1,13 @@
 
 
 <div class="flex-container">
-    <ul ng-repeat="person in personInfo" >
-       <li> <img class="imgsize flex-right" ng-src=" {{person.img_path}}"></li>
-        <li>{{person.firsName}},{{person.lastName}}</li>
+    <div class=" row" >
+       <div class="col-md-3"ng-repeat="person in personInfo">
+           <img class="imgsize flex-right" ng-src=" {{person.img_path}}">
 
+         <a href="">{{person.firstName}},{{person.lastName}}</a>
+       </div>
 
-    </ul>
+    </div>
 
 </div>
