@@ -1,8 +1,4 @@
 
-
-
-
-
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -58,8 +54,8 @@ app.get("/service/person_table",function(req, res, next){
 app.get( "/service/person_table/:personid",function(req, res, next){
    //arrays to store dynamic parameters
     var ids =[];
-    var id=req.params.id;
-    ids.push(id);
+    var personid=req.params.personid;
+    ids.push(personid);
     
     var query = "SELECT * FROM person_table WHERE personid = ?";
     req.getConnection(function(err, connection){

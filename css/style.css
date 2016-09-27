@@ -1,0 +1,37 @@
+.flex-container{
+    
+    display: flex;
+    flex-direction: column;
+     
+    float:left;
+    margin-left: auto;
+    
+}
+.flex-item{
+    background: black;
+    color: white;
+    cursor: pointer;
+    
+}
+.flex-item:hover{
+    background: white;
+    color: black;
+    
+}
+.imgsize{
+    height: 220px;
+    width: 200px;
+    
+}
+
+.flex-right{
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    float: right;
+}
+.font-container{
+    font-size: 24;
+    font-style: normal;
+}
